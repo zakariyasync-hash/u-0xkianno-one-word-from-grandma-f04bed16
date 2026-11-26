@@ -4,30 +4,32 @@
 [![rank](https://make.fun/badge/u-0xkianno-one-word-from-grandma-f04bed16/zakariyasync-hash/u-0xkianno-one-word-from-grandma-f04bed16/rank.svg)](https://make.fun/bounty/u-0xkianno-one-word-from-grandma-f04bed16)
 [![reward](https://make.fun/badge/u-0xkianno-one-word-from-grandma-f04bed16/zakariyasync-hash/u-0xkianno-one-word-from-grandma-f04bed16/reward.svg)](https://make.fun/bounty/u-0xkianno-one-word-from-grandma-f04bed16)
 
-An entry for the [One Word From Grandma](https://make.fun/bounty/u-0xkianno-one-word-from-grandma-f04bed16) bounty on make.fun.
+Entry for the [One Word From Grandma](https://make.fun/bounty/u-0xkianno-one-word-from-grandma-f04bed16) bounty on make.fun.
 
-## The entry
+## The word
 
-Exactly one word — the word a grandma would text about AI:
+**doohickey**
 
-> **Roboot**
-
-It is the typo a grandma would actually make when she means "robot":
-warm, a little baffled, funny in a single word, and unmistakably about
-a machine. No sentence, no explanation, no punctuation tricks.
+The single word our grandma would text about AI. She has called every
+unfamiliar gadget a doohickey for decades — the remote, the microwave,
+the "internet box" — and the AI thing is simply the newest doohickey.
+Warm, a little baffled, and funny in one word, with no explanation
+needed.
 
 ## How it works
 
 `main.py` (Python 3, no dependencies) validates the word against the
-competition gate — 1 to 30 characters, not only whitespace, exactly one
-word — then writes it, with no trailing newline, to `/output/entry.txt`.
+competition gate — UTF-8, 1–30 characters, not only whitespace, exactly
+one word — writes it with no trailing newline to `/output/entry.txt`,
+then reads the file back and fails unless the round-trip is byte-exact.
 
 ```sh
 python3 main.py
+cat /output/entry.txt  # doohickey
 ```
-
-Referral code: bj9tq8zt
 
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+Referral code: bj9tq8zt
